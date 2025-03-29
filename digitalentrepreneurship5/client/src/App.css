@@ -1,0 +1,231 @@
+/* App.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Authentication Pages Styling */
+  .auth-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .auth-container h1 {
+    color: #4a6fa5;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+  }
+  
+  .app-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .app-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a6fa5;
+    margin-bottom: 5px;
+  }
+  
+  .app-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Tabs for Register/Login */
+  .auth-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e6ed;
+  }
+  
+  .tab-btn {
+    flex: 1;
+    padding: 12px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #666;
+    position: relative;
+  }
+  
+  .tab-btn:hover {
+    background-color: #f5f7fa;
+  }
+  
+  .tab-btn.active {
+    font-weight: bold;
+    color: #4a6fa5;
+  }
+  
+  .tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #4a6fa5;
+  }
+  
+  /* Form Elements */
+  form {
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #4a6fa5;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.2);
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3b5c8c;
+  }
+  
+  /* Verification Form */
+  .verification-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .verification-container h2 {
+    color: #4a6fa5;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .verification-container p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .verification-container input {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Messages */
+  .message {
+    padding: 12px 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .message.success {
+    background-color: #e6f4ea;
+    color: #2e7d32;
+    border-left: 4px solid #2e7d32;
+  }
+  
+  .message.error {
+    background-color: #fdede8;
+    color: #d32f2f;
+    border-left: 4px solid #d32f2f;
+  }
+  
+  .message.info {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border-left: 4px solid #1565c0;
+  }
+  
+  /* Link to toggle between register and login */
+  .auth-toggle {
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .auth-toggle a {
+    color: #4a6fa5;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .auth-toggle a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    .auth-container {
+      margin: 20px;
+      padding: 20px;
+    }
+    
+    .app-title {
+      font-size: 2rem;
+    }
+    
+    .app-subtitle {
+      font-size: 1rem;
+    }
+  }
