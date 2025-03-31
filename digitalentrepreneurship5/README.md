@@ -1,5 +1,10 @@
 # HW 5: Technical Assignment - Improving an MVP
 
+# My Updates:
+- updated UX/UI to be modern and match the name 'pulse'
+- added a darck mode theme
+- updated formatting
+
 ## 🚀 PULSE: Professor Undergrad Learning & Student Evaluations
 
 PULSE is a web application designed to help students share and access reviews of professors and courses. Similar to RateMyProfessor but specifically tailored for Spelman and Morehouse students, PULSE allows users to:
