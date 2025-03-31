@@ -229,3 +229,75 @@
       font-size: 1rem;
     }
   }
+  /* 🎨 Rainbow Login Aesthetic Additions */
+
+body {
+  background: linear-gradient(to right, #ff6ec4, #7873f5, #4ade80, #facc15, #f87171);
+  background-size: 300% 300%;
+  animation: rainbow-bg 20s ease infinite;
+}
+
+@keyframes rainbow-bg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.auth-container {
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background-clip: padding-box;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-container::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -4px; bottom: -4px; left: -4px; right: -4px;
+  background: linear-gradient(135deg, #f472b6, #60a5fa, #34d399);
+  border-radius: 20px;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #f472b6, #60a5fa, #34d399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.25rem;
+}
+
+.auth-tabs .tab-btn.active::after {
+  background: linear-gradient(to right, #34d399, #60a5fa);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border-radius: 8px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.3);
+}
+
+button[type="submit"],
+.verification-container button {
+  background: linear-gradient(to right, #f472b6, #60a5fa);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+button[type="submit"]:hover,
+.verification-container button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
